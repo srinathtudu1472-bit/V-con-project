@@ -1,0 +1,92 @@
+.quick-actions {
+  background: rgba(20, 20, 40, 0.6);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.quick-actions h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.action-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 12px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.action-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.action-button:active {
+  transform: translateY(-2px);
+}
+
+.action-icon {
+  font-size: 24px;
+}
+
+.action-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+}
+
+@media (max-width: 480px) {
+  .quick-actions {
+    padding: 16px;
+  }
+
+  .actions-grid {
+    gap: 10px;
+  }
+
+  .action-button {
+    padding: 12px 8px;
+    gap: 6px;
+  }
+
+  .action-icon {
+    font-size: 20px;
+  }
+
+  .action-label {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .actions-grid {
+    gap: 8px;
+  }
+
+  .action-button {
+    padding: 10px 6px;
+  }
+
+  .action-icon {
+    font-size: 18px;
+  }
+}

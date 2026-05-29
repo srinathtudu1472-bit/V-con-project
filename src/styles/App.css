@@ -1,0 +1,113 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+}
+
+.app-header {
+  background: rgba(30, 30, 50, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.logo-icon {
+  background: linear-gradient(135deg, #FF8C42 0%, #FFB84D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo-text {
+  color: #00d9ff;
+}
+
+.investor-hub {
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.header-icons {
+  display: flex;
+  gap: 12px;
+  font-size: 20px;
+}
+
+.app-main {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 100px;
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.page {
+  padding: 20px;
+  text-align: center;
+  color: #999;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .app-main {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .header-content {
+    max-width: 100%;
+  }
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .app-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .app-header {
+    border-radius: 24px 24px 0 0;
+  }
+
+  .app-main {
+    max-width: 480px;
+    border-radius: 0 0 24px 24px;
+    border: 2px solid rgba(0, 217, 255, 0.2);
+  }
+}
